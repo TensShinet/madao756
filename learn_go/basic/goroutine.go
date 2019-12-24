@@ -12,3 +12,9 @@ func Say(s string) {
 		fmt.Println(s)
 	}
 }
+
+// 使用 goroutine
+func goroutineMain() {
+	go Say("Hi")
+	Say("ts")
+}
